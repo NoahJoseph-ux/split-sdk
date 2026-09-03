@@ -35,8 +35,8 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
+    "build": "node api.js && tsup",
+    "dev": "node api.js && tsup --watch",
     "test": "vitest run test/client.test.ts test/retryPolicy.test.ts",
     "test:ui": "vitest run test/ui/",
     "test:all": "vitest run",
